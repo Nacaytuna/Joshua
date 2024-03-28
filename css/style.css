@@ -2,6 +2,7 @@
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
 }
 
 body {
@@ -99,6 +100,7 @@ main {
 }
 /* ROWS STYLES */
 .rows {
+    scroll-snap-align: start;
     position: relative;
     display: flex;
     margin: 0px;
@@ -106,6 +108,14 @@ main {
     width: 100vw;
     padding: 0;
     background-position: center;
+}
+
+.rows h1 {
+
+}
+
+.rows p {
+
 }
 
 .rows .nextpic {
@@ -163,6 +173,7 @@ main {
 }
 
 #row5 {
+    height: calc(100svh - 35px);
     display: flex;
     justify-content: center;
     align-items: center;
