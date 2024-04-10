@@ -2,6 +2,34 @@
     scroll-snap-type: y mandatory;
 }
 
+#recipesubmenu {
+    display: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+#recipesubmenulist {
+    text-decoration: none;
+    margin: 0;
+    padding: 5px;
+}
+
+#recipesubmenulist li {
+    margin: 0;
+    margin-bottom: 6px;
+    padding: 0;
+}
+
+#recipebutton:hover + #recipesubmenu {
+    display: flex;
+    flex-wrap: wrap;
+    width: 105px;
+    position: fixed;
+    background-color: rgba(200, 200, 200, 0.8);
+    right: 120px;
+    text-align: left;
+}
 
 #herologo {
     width: 67%;

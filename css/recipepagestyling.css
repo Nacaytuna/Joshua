@@ -33,7 +33,7 @@ main {
 }
 .cards {
     width: 30.33vw;
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 10px;
     position: fixed;
     top: 90vh;
