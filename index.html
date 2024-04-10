@@ -2,7 +2,8 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link  rel="stylesheet" href="css\style.css"/>
+    <link rel="stylesheet" href="css\style.css"/>
+    <link rel="stylesheet" href="css\mainstyle.css">
     <title>Brewology Coffee</title>
     <link rel="icon" type="image/x-icon" href="images\headerlogo.png">
 
@@ -37,10 +38,10 @@
             
             <ul id="navmenu">
                 <li>
-                    <a href="#">Home</a>
+                    <a href="index.html">Home</a>
                 </li>
                 <li>
-                    <a href="#">Recipes</a>
+                    <a href="recipepage1.html">Recipes</a>
                 </li>
                 <li>
                     <a href="#">About Us</a>
@@ -50,7 +51,7 @@
     </header>
 
     <main>
-        <div class="rows" id="row1">
+        <div class="rows scrollsnapclass" id="row1">
             <video autoplay muted loop>
                 <source src="images\landingbgvid.mp4" type="video/mp4">
                 Your browser does not support the video tag.
@@ -58,14 +59,15 @@
             
             <img id="herologo" src="images\herologo.png"/>
 
-            <a id="brewbutton" href="#row2"><div>
+            <a id="brewbutton" href="#row2"><div id="brewbuttoncontainer">
             <h3 class="playfairdisplayfont" id="brewtext">Start Brewing</h3>
             </div></a>
-        </div>
 
-        <div class="rows" id="row2">
+        </div> 
+
+        <div class="rows scrollsnapclass" id="row2">
             <div class="previewtext">
-                <h1>COFFEE RECIPE</h1>
+                <h1>COFFEE RECIPE 1</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
             <a href="#row3">
@@ -75,9 +77,9 @@
             </a>
         </div>
 
-        <div class="rows" id="row3">
+        <div class="rows scrollsnapclass" id="row3">
             <div class="previewtext2">
-                <h1>COFFEE RECIPE</h1>
+                <h1>COFFEE RECIPE 2</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
             <a href="#row4">
@@ -87,9 +89,9 @@
             </a>
         </div>
 
-        <div class="rows" id="row4">
+        <div class="rows scrollsnapclass" id="row4">
             <div class="previewtext">
-                <h1>COFFEE RECIPE</h1>
+                <h1>COFFEE RECIPE 3</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
             <a href="#row5">
@@ -99,7 +101,7 @@
             </a>
         </div>
 
-        <div class="rows" id="row5">
+        <div class="rows scrollsnapclass" id="row5">
             <div id="signup">
                 <center><h1 class="playfairdisplayfont">Join our Newsletter!</h2></center>
                 <input type="textfield" placeholder="Email"/>
