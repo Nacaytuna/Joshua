@@ -24,6 +24,8 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    background: url(../images/coffee1.jpg);
+    background-size: cover;
 }
 
 .content {
@@ -36,10 +38,12 @@ main {
     position: fixed;
     top: 90vh;
     border-radius: 5px;
-    z-index: 2;
+    z-index: 0;
     height: 100px;
     box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.4);
     transition: all 0.2s;
+
+    background-color: bisque;
 }
 
 .cards:hover {
