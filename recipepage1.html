@@ -2,8 +2,11 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- glboal styling -->
         <link  rel="stylesheet" href="css\style.css"/>
+        <!-- page specific styling -->
         <link rel="stylesheet" href="css\recipepagestyling.css">
+
         <title>Brewology Coffee</title>
         <link rel="icon" type="image/x-icon" href="images\headerlogo.png">
     
@@ -41,10 +44,9 @@
                     <a href="index.html">Home</a>
                 </li>
                 <li>
-                    
-                    <a href="#" id="recipebutton">Recipes</a>
-                    <div id="recipesubmenu">
-                        <ul id="recipesubmenulist">
+                    <a href="#" class="recipebutton">Recipes</a>
+                    <div class="recipesubmenu">
+                        <ul class="recipesubmenulist">
                             <li>
                                 <a href="recipepage1.html">Recipe 1</a>
                             </li>
@@ -66,6 +68,7 @@
 
     <main>
         <div class="rows" id="row1">
+            <div class="overlay"></div>
             <div class="content"><center><h1>THIS IS THE MAIN DIV FOR RECIPE</h1></center></div>
             <div class="cards" id="card1">
                 div 1
@@ -91,6 +94,6 @@
         </footer>
     </main>
 
-    
+    <script src="js\recipecardfocus.js"/>
 </body>
 </html>

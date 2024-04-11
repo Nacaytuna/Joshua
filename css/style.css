@@ -86,26 +86,27 @@ header #logo img {
     z-index:2;
 }
 
-#recipesubmenu {
+.recipesubmenu {
     display: none;
     padding: 0;
     margin: 0;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
-#recipesubmenulist {
+.recipesubmenulist {
     text-decoration: none;
     margin: 0;
     padding: 5px;
 }
 
-#recipesubmenulist li {
+.recipesubmenulist li {
     margin: 0;
     margin-bottom: 6px;
     padding: 0;
 }
 
-#recipesubmenu:hover {
+.recipebutton:hover + .recipesubmenu,
+.recipesubmenu:hover {
     display: flex;
     flex-wrap: wrap;
     width: 105px;
@@ -114,6 +115,9 @@ header #logo img {
     right: 120px;
     text-align: left;
 }
+
+
+
 
 /* MAIN */
 main {
