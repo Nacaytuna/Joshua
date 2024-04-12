@@ -63,6 +63,7 @@ main {
 .cards:not(.focused):hover {
     top: 80vh;
     height: calc(100px + 10vh);
+    cursor: pointer;
 }
 
 .cards.focused {
