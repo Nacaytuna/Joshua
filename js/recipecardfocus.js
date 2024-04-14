@@ -42,8 +42,14 @@ document.addEventListener("DOMContentLoaded", function() {
         card.addEventListener("click", function() {
             if (card.classList.contains("focused")) {
                 unfocusCard();
+                console.log("card unfocus");
+                console.log(card.classList);
+                console.log(card);
             } else {
                 focusCard(card);
+                console.log("card focus");
+                console.log(card.classList);
+                console.log(card);
             }
         });
     });
