@@ -2,6 +2,9 @@
     /* overflow: hidden; */
     box-sizing: border-box;
 }
+:root {
+    --cardwidth: 40vw;
+}
 .rows {
     position: relative;
     display: flex;
@@ -69,7 +72,9 @@ main {
 .cards.focused {
     top: 15vh;
     height: 50vh;
-    left: 35vw !important;
+    width: var(--cardwidth);
+    /* left: 35vw !important; */
+    left: calc(50vw - var(--cardwidth)/2) !important;
     z-index: 2;
 }
 
