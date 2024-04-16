@@ -9,6 +9,11 @@ body {
     font-family: alice;
 }
 
+/* global classes */
+.nostylelinks {
+    text-decoration: none;
+    color: black !important;
+}
 
 
 /* fonts classes */
