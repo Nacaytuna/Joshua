@@ -1,19 +1,37 @@
 const emailfield = document.getElementById("emailfield");
 const pwordfield = document.getElementById("pwordfield");
 const signupbtn = document.getElementById("signupbutton");
+const modal = document.querySelector("#signupmodal");
+const emailstring = document.querySelector("#emailstring");
+const pwordstring = document.querySelector("#pwordstring");
+const overlay = document.querySelector(".overlay");
 
-function handleSignupClick() {
-    // console.log("signup button clicked");
+
+function showmodal() {
     var email = document.getElementById("emailfield").value;
     var password = document.getElementById("pwordfield").value;
+    if (email == "") { email = "null"}
+    if (password == "") { password = "null"}
 
-    var message = "Your account with the credentials:\n" +
-                  "Email: " + email + "\n" +
-                  "Password: " + password + "\n" +
-                  "has been registered successfully!";
+    emailstring.textContent = "Email: " + email;
+    pwordstring.textContent = "Password: " + password;
 
-    alert(message);
+
+    modal.classList.add("shown");
+    overlay.style.display = "block";
+}
+
+function hidemodal() {
+    modal.classList.remove("shown");
+    overlay.style.display = "none";
+}
+
+function handleSignupClick() {
+    console.log("showing modal");
+    showmodal();
 }
 
 signupbtn.addEventListener("click",handleSignupClick);
+modal.addEventListener("click", hidemodal);
+overlay.addEventListener("click", hidemodal);
 

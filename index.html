@@ -60,7 +60,7 @@
                     </div>
                 </li>
                 <li>
-                    <a href="#">About Us</a>
+                    <a href="aboutus.html">About Us</a>
                 </li>
             </ul>
         </nav>
@@ -123,12 +123,19 @@
                 <input id="emailfield" type="textfield" placeholder="Email"/>
                 <input id="pwordfield" type="password" placeholder="Password"/>
 
-                <a id="signupbutton" href="">
-                <div>
+                
+                <a id="signupbutton" href="#"><div>
                 <h3 class="playfairdisplayfont" id="brewtext">Sign Up</h3>
-                </div>
-                </a>
-                <!-- <center><button>Sign up</button></center> -->
+                </div></a>
+                
+                <div class="overlay"></div>
+                <div id="signupmodal">
+                    <center><h2>SIGN UP SUCCESS</h2></center>
+                    <p>Your account with credentials: </p>
+                    <p id="emailstring">Default string</p>
+                    <p id="pwordstring">Default string</p>
+                    <p>has been added to our database</p>
+                    </div>
             </div>
         </div>
         <footer>
