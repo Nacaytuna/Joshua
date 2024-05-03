@@ -96,6 +96,8 @@ header #logo img {
     padding: 0;
     margin: 0;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    width: 7vw !important;
+    min-width: 130px;
 }
 
 .recipesubmenulist {
@@ -105,6 +107,7 @@ header #logo img {
 }
 
 .recipesubmenulist li {
+    font-size: fit-content;
     margin: 0;
     margin-bottom: 6px;
     padding: 0;
@@ -222,7 +225,15 @@ footer h4 {
     #row5 {
         background-color: antiquewhite;
     } */
+    .mobile-menu:checked ~ ul li .recipesubmenu {
+        display: block;
+        box-shadow: none;
+        position: fixed;
+        right: 2%;
+        top: 50px;
+        text-align: left;
 
+    }
 }
 
 @media only screen and (max-width: 520px) {
@@ -265,4 +276,5 @@ footer h4 {
         display:block;
     }
 
+    
 }
